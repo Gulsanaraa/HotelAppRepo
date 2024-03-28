@@ -7,9 +7,14 @@ import org.openqa.selenium.support.ui.Select;
 import java.io.File;
 import java.time.Duration;
 
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -44,6 +49,23 @@ public class FirstKatalonTestScript {
 	    driver.findElement(By.id("password")).clear();
 	    driver.findElement(By.id("password")).sendKeys("gularaa123");
 	    driver.findElement(By.id("login")).click();
+	    
+	  //  Reporter.log("Login was successful", true);
+	    
+//	    ExtentReports extent = new ExtentReports();
+//
+//	  //Below is how a test would be created with 1 passing log.
+//
+//	  extent.createTest("FirstKatalonTestScript").log(Status.PASS, "This is a logging event for FirstTest and it passed!");
+//
+//	  extent.flush();
+//	    
+	    ExtentReports extent = new ExtentReports();
+	    ExtentSparkReporter spark = new ExtentSparkReporter("target/FirstKatalonTestScript.html");
+	    extent.attachReporter(spark);
+	    extent.createTest("MyFirstTest").log(Status.PASS, "This is a logging event for MyFirstTest, and it passed!");
+	    extent.flush();
+	    
 	    driver.findElement(By.id("location")).click();
 	    new Select(driver.findElement(By.id("location"))).selectByVisibleText("Sydney");
 	    driver.findElement(By.id("hotels")).click();

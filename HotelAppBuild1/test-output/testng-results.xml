@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T14:33:32 AEDT" name="Default suite" finished-at="2024-03-13T14:33:49 AEDT" duration-ms="17038">
+  <suite started-at="2024-03-14T11:01:39 AEDT" name="Default suite" finished-at="2024-03-14T11:01:49 AEDT" duration-ms="10278">
     <groups>
     </groups>
-    <test started-at="2024-03-13T14:33:32 AEDT" name="Default test" finished-at="2024-03-13T14:33:49 AEDT" duration-ms="17038">
+    <test started-at="2024-03-14T11:01:39 AEDT" name="Default test" finished-at="2024-03-14T11:01:49 AEDT" duration-ms="10278">
       <class name="tests.FirstKatalonTestScript">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FirstKatalonTestScript@74235045]" started-at="2024-03-13T14:33:32 AEDT" name="setUp" finished-at="2024-03-13T14:33:34 AEDT" duration-ms="1694" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FirstKatalonTestScript@639c2c1d]" started-at="2024-03-14T11:01:39 AEDT" name="setUp" finished-at="2024-03-14T11:01:40 AEDT" duration-ms="1254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFirstKatalonTestScript()[pri:0, instance:tests.FirstKatalonTestScript@74235045]" started-at="2024-03-13T14:33:34 AEDT" name="testFirstKatalonTestScript" finished-at="2024-03-13T14:33:49 AEDT" duration-ms="15112" status="PASS">
+        <test-method signature="testFirstKatalonTestScript()[pri:0, instance:tests.FirstKatalonTestScript@639c2c1d]" started-at="2024-03-14T11:01:40 AEDT" name="testFirstKatalonTestScript" finished-at="2024-03-14T11:01:49 AEDT" duration-ms="8859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFirstKatalonTestScript -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FirstKatalonTestScript@74235045]" started-at="2024-03-13T14:33:49 AEDT" name="tearDown" finished-at="2024-03-13T14:33:49 AEDT" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FirstKatalonTestScript@639c2c1d]" started-at="2024-03-14T11:01:49 AEDT" name="tearDown" finished-at="2024-03-14T11:01:49 AEDT" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
